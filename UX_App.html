@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="UTF-8">
+   <title>Quiz</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" media="screen" href="UX_App.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="UX_App.js" defer></script>
+  </head>
+
+  <body>
+      <!--MODAL POP UP-->
+   <div class = "app-box__popup__cover hide">
+    <div class="app-box__popup">
+     <h3 class="app-box__popup--top"></h3>
+     <p class="app-box__popup--results"></p>
+     <div class="app-box__popup--buttons">
+      <button class="app-box__popup--buttonRestart">Play again?</button>
+      <button class="app-box__popup--buttonsExit">Exit</button>
+     </div>
+    </div>
+   </div>
+
+   <!--APP CONTAINER-->
+   <div class = "app-box">
+
+    <!--APP CONTAINER HEADER-->
+    <div class = "app-box__header">
+
+     <span id = "app-box__header__menuicon" onkeypress="openNav()" onclick="openNav()">
+      <i class="material-icons" aria-label="Open sidemenu" tabindex="1">menu</i>
+     </span>
+
+     <h1 class = "app-box__header--h1">Quiz de la Quiz</h1>
+
+     <!--APP CONTAINER SIDE MENU-->
+     <div class="app-box__header__sidemenu">
+      <a id="sideMenu-main" class = "main" href="#main" onclick="renderMain()" aria-label="Returning to Main" tabindex="-1">Main</a>
+      <a id="sideMenu-main" class = "stats" href="#stats" onclick="renderStats()" aria-label="Statistics" tabindex="-1">Statistics</a>
+      <a id="sideMenu-main" class = "about" href="#about" onclick="renderAbout()" aria-label="About the Quiz" tabindex="-1">About</a>
+     </div>
+    </div>
+
+    <!--APP CONTAINER MAIN WINDOW-->
+    <div id = "app-box__main" class = "app-box__main__start">
+     <p class = "app-box__main__start__text" tabindex="1">Are you ready to test your knowledge?</p>
+     <button class="app-box__main__start__button" onclick="renderMain()" aria-label="Click to start the Quiz" tabindex="1">Start the Quiz!</button>
+    </div>
+
+    <!--APP CONTAINER MAIN WINDOW MODAL: ACTIVE WHEN SIDEMENU IS ACTIVE-->
+    <div class ="app-box__main--menuHover hide" onclick="closeNav()"></div>
+   </div>
+  </body>

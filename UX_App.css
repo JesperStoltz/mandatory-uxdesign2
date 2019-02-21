@@ -1,0 +1,292 @@
+/*=======================================BODY===============================================
+==========================================================================================*/
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height:640px;
+}
+
+/*=====================================APP CONTAINER========================================
+==========================================================================================*/
+
+.app-box {
+    width: 360px;
+    height:640px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+/*==============================APP CONTAINER HEADER========================================
+==========================================================================================*/
+
+/*=====================================HEADER BOX=========================================*/
+.app-box__header {
+    height: 70px;
+    background-color: rgb(211, 238, 247);
+    display: flex;
+}
+
+/*===================================HEADER TITLE========================================*/
+.app-box__header > h1 {
+    position: relative;
+    top: -5px;
+    left: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*=================================HEADER SIDEMENU ICON===================================*/
+.app-box__header .material-icons {
+    font-size: 70px;
+    position: absolute;
+}
+
+.app-box__header .material-icons:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+/*====================================HEADER SIDEMENU=======================================*/
+
+.app-box__header__sidemenu {
+height: 505.8px; 
+width: 0; 
+position: relative; 
+z-index: 1; 
+top: 70px;
+left: -210.5px;
+background-color: lightblue; 
+overflow-x: hidden; 
+padding-top: 60px; 
+transition: 0.5s; 
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+/*=================================HEADER SIDEMENU LINKS =====================================*/
+.app-box__header__sidemenu a {
+padding: 6px;
+text-decoration: none;
+font-size: 25px;
+font-weight: bold;
+color:black;
+display: block;
+transition: 0.3s;
+}
+
+.app-box__header__sidemenu a:hover {
+color: grey;
+cursor: pointer;    
+}
+
+/*=============================APP CONTAINER MAIN WINDOW==================================
+==========================================================================================*/
+
+/*===================================MAIN START PAGE======================================*/
+
+.app-box__main__start {
+height: 559px;
+background-color: rgba(227, 237, 241, 0.534);
+overflow: auto;
+overflow-x: hidden;
+font-family: 'Raleway', sans-serif;
+display: flex;
+flex-direction: column;
+padding: 5px;
+justify-content: center;
+align-items: center;
+}
+
+/*==================================MAIN START PAGE TEXT===================================*/
+.app-box__main__start__text {
+position: relative;
+top: -40px;
+font-weight: bold;
+font-size: 18px;
+}
+
+/*=================================MAIN START PAGE BUTTON==================================*/
+.app-box__main__start__button {
+    height: 60px;
+    width: 120px;
+    background-color: lightskyblue;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*===================================MAIN QUIZ PAGE======================================*/
+.app-box__main__quiz { 
+height: 566px;
+background-color: rgba(227, 237, 241, 0.534);
+overflow: auto;
+overflow-x: hidden;
+font-family: 'Raleway', sans-serif;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.app-box__main__quiz--question {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.app-box__main__quiz--answer {
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+    top: -19px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.app-box__main__quiz--doneButton {
+    position: relative;
+    left: 120px;
+    height: 60px;
+    width: 120px;
+    background-color: lightskyblue;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/*===================================MAIN STATS PAGE======================================*/
+.app-box__main__stats { 
+height: 559px;
+background-color: rgba(227, 237, 241, 0.534);
+overflow: auto;
+overflow-x: hidden;
+font-family: 'Raleway', sans-serif;
+display: flex;
+flex-direction: column;
+padding: 5px;
+}
+
+.app-box__main__stats--title {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.app-box__main__stats--text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0;
+    position: relative;
+    top: -30px;
+    font-size: 22px;
+}
+
+/*==================================MAIN ABOUT PAGE======================================*/
+.app-box__main__about { 
+height: 559px;
+background-color: rgba(227, 237, 241, 0.534);
+overflow: auto;
+overflow-x: hidden;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.app-box__main__about--text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.app-box__main__about--title {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+
+/*=============================APP CONTAINER MODAL POP UP==================================
+==========================================================================================*/
+
+/*===============================MODAL BACKGROUND COVER===================================*/
+.app-box__popup__cover {
+position: absolute;
+width: 360px;
+height:640px;
+background-color: rgba(0,0,0,0.4);
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*===================================MODAL DIALOGBOX=========================================*/
+.app-box__popup{
+height: 180px;
+width: 280px;
+background-color:  rgb(211, 238, 247);
+border: 2px solid gainsboro;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.app-box__popup--top { /*Titeln*/
+padding: 3px;
+margin: 0;
+font-family: 'Raleway', sans-serif;
+font-size: 30px;
+}
+
+.app-box__popup--results { /*P-taggen med resultat*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-box__popup--buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-box__popup--buttonRestart {
+    height: 50px;
+    background-color: lightskyblue;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+.app-box__popup--buttonsExit {
+    height: 50px;
+    background-color: lightskyblue;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/*=================================MODAL COVER: SIDEMENU OPEN=================================*/
+.app-box__main--menuHover {
+padding: 0;
+margin: 0;
+height: 566px;
+width: 360px;
+position: absolute;
+top: 72px;
+background-color: rgba(0,0,0,0.4);
+}
+
+/*==============================HIDE CLASS: USE TO ADD DISPLAY:NONE===========================*/
+.hide {
+display: none;
+}
+
