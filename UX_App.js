@@ -465,14 +465,22 @@ function collectedRights() { //Function to collect the amount of right answers.
 }
 
 //===========================6.5.3 COLLECTED WRONG ANSWERS============================
+
+//Den här borde kunna göras mycket mer generell. 10 måste ersättas med answerArray.length för att fungera även när antalet frågor ökar eller minskas.
 function collectedWrongs() { //Function to calculate all the wrong answers.
     let tempWrong = rounds * 10; //Calculates all the possible answers
     collectedWrongAnswers = tempWrong - collectedRightAnswers; //Removes all the correct answers from the total amount of possible answers to show the amount of wrong.
+    
+    /*NY KOD:
+    getData()
+    .then (data => function(data)) //EN function som kastar in datan i en array behövs. Ta ut nycklarna i answers?
+    /*END NY KOD*/
 }
 
+//Den här borde kunna göras mycket mer generell. 10 måste ersättas med answerArray.length för att fungera även när antalet frågor ökar eller minskas.
 //===================6.5.4 COLLECTED RIGHT ANSWERS IN PERCENTAGE======================
 function correctPercentage() {
-
+    
     let tempPercentage = collectedRightAnswers / rounds*10; //Calculates the percentage of correct answers
     percentage = Math.round(tempPercentage * 10) / 10; //Uses the Math.round to set the decimal to 1, instead of being unchecked. If no decimal exists, no decimal is shown. E.g. 45.1 = YES, 45.0 = NO.
 
@@ -485,8 +493,7 @@ function collectedDone() { //Collection of functions meant to run when you press
     collectedRights();
     collectedWrongs()
     correctPercentage();
-    controlChildrenTabIndexMinus()
-    
+    controlChildrenTabIndexMinus()   
 }
 
 
